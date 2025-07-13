@@ -9,7 +9,7 @@ class Main:
 
         pygame.init()
         self.screen = pygame.display.set_mode((300, 670))
-        pygame.display.set_caption("LED Panel (Vertical 1x8)")
+        pygame.display.set_caption("Q3")
 
         self.simulation_started = False
 
@@ -84,7 +84,6 @@ class Main:
                     self.leds['Q1'] = False
                     self.leds['Q2'] = True
 
-
                 if self.leds_status['Q1'] and self.leds_status['Q2'] and not self.leds_status['Q3']:
                     self.leds['Q2'] = False
                     self.leds['Q3'] = True
@@ -154,4 +153,3 @@ class Main:
                 self.timer_1.reset()
                 self.timer_2.input = False
                 self.timer_2.reset()
-
